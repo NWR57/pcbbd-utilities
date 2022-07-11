@@ -1,0 +1,16 @@
+{
+  "name": "pcbbd-utilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./structures/index.js",
+  "scripts": {
+    "run" : "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.9.3",
+    "discord.js": "^13.8.1"
+  }
+}
