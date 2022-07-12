@@ -76,11 +76,10 @@ module.exports = {
 
 
     const img = await generateImage(member)
-
-    member.guild.channels.cache.get(ch_welcome).send({
-      content: `Hey ${member}, welcome to **${member.guild.name}!** Make sure to read the <#781592242371952701>, get your <#781866203336409169>, and read the <#915180660262580235>. Hope you have a good time here!`,
-      files: [img]
-    })
+if (member.guild.id === "781592241633493003") {
+      client.channels.cache.get("781592242371952706").send({      content: `Hey ${member}, welcome to **${member.guild.name}!** Make sure to read the <#781592242371952701>, get your <#781866203336409169>, and read the <#915180660262580235>. Hope you have a good time here!`,
+      files: [img]})
+         }
 		} catch (e) {
 			console.log(String(e.stack).bgRed);
 		}

@@ -4,9 +4,9 @@ module.exports = {
   name: "about",
   aliases: ["ab","info"],
   usage: '',
-  description: "Gives you the websocket ping of the message.",
+  description: "Gives you information about the bot.",
   category: "info",
-  cooldown: 10,
+  cooldown: 1,
   userPermissions: "",
   botPermissions: "",
   ownerOnly: false,
@@ -20,7 +20,7 @@ module.exports = {
 
   async execute(client, message, args, config, embedcolor) {
     try {
-      message.reply({content :'JI', ephemeral:true})
+      return message.channel.send({content:'JI', flags:64})
     } catch (e) {
       console.log(String(e.stack).bgRed)
     }

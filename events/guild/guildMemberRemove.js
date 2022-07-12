@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const moment = require("moment")
 const config = require(`${process.cwd()}/structures/botconfig/config.json`);
-const { ch_gooodbye, guildId } = require('../../structures/botconfig/channels.json');
+const { ch_gooodbye, guildId } = require(`${process.cwd()}/structures/botconfig/channels.json`);
 
 module.exports = {
 	name: "guildMemberRemove",
